@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'snell-roundhand';
+  src: url('/assets/snell-roundhand/SnellBT-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+:root {
+  --font-primary: 'Great Vibes';
+  --font-secondary: 'Cormorant Upright';
+  --font-basic: 'Lora';
+  --color-ligth: #F3F4EE;
+  --color-dark: #6A766A;
+}
+
+.padding-general {
+  padding: 15vh 5vh;
+}
+
+#btn-primary {
+  width: 260px;
+  height: 40px;
+  border: none;
+  border-radius: 9px;
+  padding-top: 6px;
+  padding-right: 65px;
+  padding-bottom: 6px;
+  padding-left: 65px;
+  background-color: var(--color-dark);
+  color: var(--color-ligth);
+  font-family: var(--font-basic);
+}
+
+header {
+  background-size: cover;
+  background-image: url('/hero.png');
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div h1 {
+  color: var(--color-ligth);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 60px;
+  letter-spacing: -5%;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+}
+
+header div h1 span {
+   font-size: 75px;
+}
+
+header div h1 .and {
+ font-family: "snell-roundhand";
+  font-size: 50px;
+  margin-left: 6vh;
+}
+
+section {
+  background-image: url('texture.png');
+}
+
+.section-invite {
+  position: relative;
+  overflow: visible;
+}
+
+.section-invite img {
+  position: absolute;
+  z-index: 1;
+}
+
+.section-invite .vector1 {
+  top: 40px;
+  left: -140px;
+  width: 360px;
+}
+
+.section-invite .vector2{
+    top: 265px;
+    right: 0;
+    width: 205px;
+}
+
+.section-invite .vector3 {
+  top: 460px;
+  right: 0;
+  width: 100px;
+}
+
+section article {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+section article h2 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 54px;
+  letter-spacing: -5%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+
+section article h3 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: -5%;
+  vertical-align: middle;
+  color: var(--color-dark);
+}
+
+section article p {
+  font-family: var(--font-basic);
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 2%;
+  vertical-align: middle;
+}
+
+section article p span {
+  font-family: var(--font-primary);
+  font-size: 60px;
+  line-height: 150%;
+  letter-spacing: -5%;
+  vertical-align: middle;
+  padding: 2vh;
+} 
+
+section article .subtitule, header .subtitule {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+header .subtitule {
+  color: var(--color-ligth);
+  font-size: 16px;
+}
+
+.date .subtitule {
+  font-size: 18px;
+}
+
+section article h4 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--color-dark);
+}
+
+.img-hands {
+  height: 60vh;
+  background-image: url('/Frame\ 162544.png');
+  background-size: cover;
+}
+
+.dress-code p {
+  font-size: 20px;
+}
+
+.dress-code h4 {
+  line-height: 85%;
+}
+
+.gifts, .gifts > div{
+  border: 1px solid var(--color-dark);
+  padding: 1vh;
+}
+
+.gifts > div {
+    padding: 6vh 3vh;
+}
+
+.gifts h4, .confirmacion h4{
+  line-height: 85%;
+  margin-right: 58px;
+}
+
+.gifts p {
+  font-size: 14px;
+}
+
+.gifts .alias {
+  text-transform: uppercase;
+}
+
+.gifts .sugerencia, .confirmacion p {
+  font-size: 22px;
+  margin-left: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.confirmacion .sub-text {
+  font-size: 14px;
+  text-align: center;
+  text-transform: none;
+  margin: 0;
+}
+
+.footer h4{
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 46.94px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+}
