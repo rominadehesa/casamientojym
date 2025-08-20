@@ -49,12 +49,9 @@ header div h1 {
   color: var(--color-ligth);
   font-family: var(--font-secondary);
   font-weight: 500;
-  font-style: Medium;
   font-size: 60px;
-  letter-spacing: -5%;
   vertical-align: middle;
   text-transform: uppercase;
-
 }
 
 header div h1 span {
@@ -84,24 +81,24 @@ section {
 .section-invite .vector1 {
   top: 40px;
   left: -140px;
-  width: 360px;
+  width: 660px;
 }
 
 .section-invite .vector2{
-    top: 265px;
+    top: 65px;
     right: 0;
-    width: 205px;
+    width: 420px;
 }
 
 .section-invite .vector3 {
   top: 460px;
   right: 0;
-  width: 100px;
+  width: 250px;
 }
 
 section article {
   text-align: center;
-  margin-bottom: 10vh;
+  margin: 12vh 2vh;
 }
 
 section article h2 {
@@ -143,7 +140,7 @@ section article p span {
 } 
 
 section article .subtitule, header .subtitule {
-  font-family: var(--font-secondary);
+  font-family: var(--font-basic);
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 2%;
@@ -173,8 +170,8 @@ section article h4 {
 }
 
 .img-hands {
-  height: 60vh;
-  background-image: url('/Frame\ 162544.png');
+  height: 100vh;
+  background-image: url('assets/wedding.png');
   background-size: cover;
 }
 
@@ -184,6 +181,10 @@ section article h4 {
 
 .dress-code h4 {
   line-height: 85%;
+}
+
+.gifts {
+  margin: 20vh;
 }
 
 .gifts, .gifts > div{
@@ -222,7 +223,7 @@ section article h4 {
   margin: 0;
 }
 
-.footer h4{
+footer h4{
   font-family: var(--font-primary);
   font-weight: 400;
   font-style: Regular;
@@ -231,4 +232,78 @@ section article h4 {
   letter-spacing: 0%;
   text-align: center;
   vertical-align: middle;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  padding: 10vh;
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-ligth);
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 65vh;
+  }
+  footer {
+    padding: 5vh;
+  }
+  .container-flex {
+    display: block;
+  }
+  .padding-general {
+    padding: 10vh 5vh;
+  }
+  .gifts > div {
+    padding: 4vh 2vh;
+  }
+  .gifts {
+    margin: 10vh 0vh;
+  }
+  .section-invite .vector1 {
+    top: 40px;
+    left: -140px;
+    width: 350px;
+  }
+
+  .section-invite .vector2{
+      top: 365px;
+      right: 0;
+      width: 205px;
+  }
+
+  .section-invite .vector3 {
+    top: 560px;
+    right: 0;
+    width: 100px;
+  }
+  
+  .img-hands {
+    height: 40vh;
+    background-position: center;
+  }
+
+  header div h1 .and {
+    margin-left: 2vh;
+  }
+
+  header div h1 {
+    font-size: 50px;
+  }
+
+  header div h1 span {
+    font-size: 65px;
+  }
+
 }
