@@ -36,6 +36,15 @@
   font-family: var(--font-basic);
 }
 
+.fade {
+  opacity: 0;
+  transition: opacity 1.5s ease; /* suaviza el cambio */
+}
+
+.fade.visible {
+  opacity: 1; /* cuando se activa la clase visible */
+}
+
 header {
   background-size: cover;
   background-image: url('/hero.png');
