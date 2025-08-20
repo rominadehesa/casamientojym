@@ -47,7 +47,7 @@
 
 header {
   background-size: cover;
-  background-image: url('/hero.png');
+  background-image: url('/assets/hero.webp');
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -74,7 +74,8 @@ header div h1 .and {
 }
 
 section {
-  background-image: url('texture.png');
+  background-image: url('assets/texture.webp');
+  background-size: cover;
 }
 
 .section-invite {
