@@ -261,6 +261,26 @@ footer {
   background-color: var(--color-dark);
   color: var(--color-ligth);
 }
+#svg {
+  height: 70px;
+}
+#svg > svg {
+  width: 62px;
+  height: auto;
+  animation: item 1s infinite;
+}
+
+@keyframes item {
+  0% {
+    width: 65px;
+  }
+  50% {
+     width: 62px;
+  }
+  100% {
+    width: 65px;
+  }
+}
 
 @media (max-width: 600px) {
   header {
