@@ -92,12 +92,38 @@ section {
   top: 40px;
   left: -140px;
   width: 660px;
+  animation: flor1 6s infinite;
+}
+
+@keyframes flor1 {
+  0% {
+    
+  }
+  50% {
+    transform: rotate(15deg); 
+  }
+  100% {
+    
+  }
 }
 
 .section-invite .vector2{
     top: 65px;
     right: 0;
     width: 420px;
+    animation: flor2 6s infinite;
+}
+
+@keyframes flor2 {
+  0% {
+    top: 65px;
+  }
+  50% {
+    top: 25px;
+  }
+  100% {
+    top: 65px;
+  }
 }
 
 .section-invite .vector3 {
@@ -334,6 +360,30 @@ footer {
 
   header div h1 span {
     font-size: 65px;
+  }
+
+  @keyframes flor1 {
+    0% {
+      
+    }
+    50% {
+      transform: rotate(10deg); 
+    }
+    100% {
+      
+    }
+  }
+
+  @keyframes flor2 {
+    0% {
+      
+    }
+    50% {
+      top: 345px;
+    }
+    100% {
+      
+    }
   }
 
 }
