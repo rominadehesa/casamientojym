@@ -229,7 +229,7 @@ section article h4 {
 }
 
 .gifts > div {
-    padding: 6vh 3vh;
+    padding: 8vh 50vh;
 }
 
 .gifts h4, .confirmacion h4{
@@ -241,8 +241,18 @@ section article h4 {
   font-size: 14px;
 }
 
+.gifts .font-special {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  line-height: 115.99999999999999%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+} 
+  
 .gifts .alias {
   text-transform: uppercase;
+  text-align: start;
 }
 
 .gifts .sugerencia, .confirmacion p {
@@ -322,7 +332,7 @@ footer {
     padding: 10vh 5vh;
   }
   .gifts > div {
-    padding: 4vh 2vh;
+    padding: 8vh 6vh;
   }
   .gifts {
     margin: 10vh 0vh;
