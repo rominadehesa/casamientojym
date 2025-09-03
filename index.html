@@ -12,12 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio id="player" autoplay loop muted>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
     <header class="padding-general">
         <div>
             <h1 class="animate__animated animate__fadeIn animate__slow"><span>J</span>UANA</h1>
             <h1 class="animate__animated animate__fadeIn animate__slow"><span class="and">&</span><span>M</span>ANUEL</h1>
             <br>
             <p class="subtitule animate__animated animate__fadeInUp">te invitamos a nuestra boda</p>
+            <br>
+            <div class="container-music">
+                <button onclick="activarSonido()" id="btn-play">
+                    <svg width="35" height="35" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 0C58.9868 0 76 17.0132 76 38C76 58.9868 58.9868 76 38 76C17.0132 76 0 58.9868 0 38C0 17.0132 17.0132 0 38 0ZM33.166 20.4404C31.8799 19.6578 30.2715 19.6298 28.959 20.3672C27.6462 21.105 26.833 22.4941 26.833 24V52C26.833 53.5059 27.6462 54.895 28.959 55.6328C30.2715 56.3702 31.8799 56.3422 33.166 55.5596L56.166 41.5596C57.4081 40.8035 58.167 39.4541 58.167 38C58.167 36.5459 57.4081 35.1965 56.166 34.4404L33.166 20.4404Z" fill="white"/>
+                    </svg>
+                </button>
+                <button onclick="desactivarSonido()" id="btn-stop">
+                    <svg width="35" height="35" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 0C58.9868 0 76 17.0132 76 38C76 58.9868 58.9868 76 38 76C17.0132 76 0 58.9868 0 38C0 17.0132 17.0132 0 38 0ZM26.5 22C24.9893 22.0018 23.6952 22.541 22.6172 23.6172C21.5392 24.6934 21 25.9875 21 27.5V49.5C21.0018 51.0143 21.541 52.3096 22.6172 53.3857C23.6933 54.4618 24.9875 55 26.5 55H48.5C50.0143 55.0018 51.3096 54.4637 52.3857 53.3857C53.4619 52.3077 54 51.0125 54 49.5V27.5C54.0018 25.9894 53.4637 24.6952 52.3857 23.6172C51.3077 22.5392 50.0125 22 48.5 22H26.5Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
     <section class="padding-general section-invite">
@@ -149,6 +165,25 @@
             }*/
             
         });
+    </script>
+    <script>
+        let play = document.getElementById("btn-play");
+        let stop = document.getElementById("btn-stop");
+
+        function activarSonido() {
+            const player = document.getElementById("player");
+            player.muted = false;
+            player.play();
+            play.style.opacity = "0.5";
+            stop.style.opacity = "1";
+        }
+
+        function desactivarSonido() {
+            const player = document.getElementById("player");
+            player.muted = true;
+            play.style.opacity = "1";
+            stop.style.opacity = "0.5";
+        }
     </script>
 </body>
 </html>

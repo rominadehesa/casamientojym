@@ -36,6 +36,18 @@
   font-family: var(--font-basic);
 }
 
+.container-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+#btn-play, #btn-stop {
+  border: none;
+  background: none;
+}
+
 .fade {
   opacity: 0;
   transition: opacity 1.5s ease; /* suaviza el cambio */
