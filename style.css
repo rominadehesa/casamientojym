@@ -417,3 +417,12 @@ header .font-special {
   text-align: center;
   color: var(--color-ligth);
 }
+
+@media (max-width: 600px) {  
+  .gifts .sugerencia, .confirmacion p {
+    font-size: 18px;
+    margin-left: 90px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
